@@ -36,14 +36,11 @@ q:before, q:after {
 abbr, acronym {
   border: 0; }
 
-a {
-  text-decoration: underline; }
-
-a:hover {
-  text-decoration: none; }
-
 a:hover, button:hover {
   cursor: pointer; }
+
+div {
+  vertical-align: top; }
 
 body {
   color: #333333;
@@ -68,7 +65,7 @@ button:hover {
 
 .container {
   width: 100%;
-  max-width: 1172px; }
+  max-width: 1202px; }
   .container a {
     color: #002e5b;
     font-weight: 700;
@@ -86,21 +83,33 @@ button:hover {
   height: 890px; }
 
 .navbar {
-  padding: 0; }
-  .navbar .nav-link {
-    color: #ffffff;
-    font-size: 14px;
-    letter-spacing: 0.3px;
-    text-transform: uppercase; }
-  .navbar .dropdown-toggle_english {
-    background-image: url(../img/icon-lang-english.png);
-    background-position: 0 center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  padding-top: 45px; }
+  .navbar .nav-item {
+    align-self: center; }
+    .navbar .nav-item:last-child {
+      margin-left: 10px; }
+    .navbar .nav-item .nav-link {
+      color: #ffffff;
+      font-size: 14px;
+      letter-spacing: 0.3px;
+      padding-left: 22px;
+      padding-right: 22px;
+      text-transform: uppercase; }
+  .navbar .dropdown .dropdown-toggle_english {
     display: block;
-    height: 32px;
-    width: 46px; }
-    .navbar .dropdown-toggle_english:after {
+    padding-right: 12px;
+    padding-left: 0; }
+    .navbar .dropdown .dropdown-toggle_english span {
+      background-image: url(../img/icon-lang-english.png);
+      background-position: 0 center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: block;
+      height: 32px;
+      padding: 0;
+      width: 32px; }
+    .navbar .dropdown .dropdown-toggle_english:after {
+      margin-left: 4px;
       position: absolute;
       right: 0;
       top: calc(50% - 2px); }
@@ -112,15 +121,12 @@ button:hover {
   max-width: 300px;
   text-align: right; }
 .slider-header__item {
+  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  justify-content: space-between; }
 .slider-header__slide-content > a {
   color: #fde428;
   font-size: 1.3125rem;

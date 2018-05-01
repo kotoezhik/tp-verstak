@@ -1,3 +1,190 @@
+@font-face {
+  font-family: 'SegoeUI';
+  src: url(../fonts/SegoeUI.ttf);
+  font-weight: 400; }
+@font-face {
+  font-family: 'MyriadPro';
+  src: url(../fonts/MyriadPro.ttf);
+  font-weight: 400; }
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+  padding: 0;
+  margin: 0; }
 
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+fieldset, img {
+  border: 0; }
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-weight: normal;
+  font-style: normal; }
+
+ol, ul, li {
+  list-style: none; }
+
+caption, th {
+  text-align: left; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold; }
+
+q:before, q:after {
+  content: ''; }
+
+abbr, acronym {
+  border: 0; }
+
+a {
+  text-decoration: underline; }
+
+a:hover {
+  text-decoration: none; }
+
+a:hover, button:hover {
+  cursor: pointer; }
+
+body {
+  color: #333333;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.25; }
+
+h2 {
+  color: #002e5b;
+  font-size: 1.9375rem;
+  line-height: 1;
+  margin-bottom: 25px;
+  text-transform: uppercase; }
+
+h3 {
+  color: #002e5b;
+  font-size: 21px;
+  line-height: 48px;
+  text-transform: uppercase; }
+
+button:hover {
+  cursor: pointer; }
+
+.container {
+  width: 100%;
+  max-width: 1172px; }
+  .container a {
+    color: #002e5b;
+    font-weight: 700;
+    line-height: 25px;
+    text-transform: uppercase; }
+  .container .col_gray_dark {
+    color: #333333; }
+  .container .col_gray_light {
+    color: #666666; }
+
+.bg-main {
+  background-image: url(../img/bg-header-slider-01.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 890px; }
+
+.navbar {
+  padding: 0; }
+  .navbar .nav-link {
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase; }
+  .navbar .dropdown-toggle_english {
+    display: block;
+    padding-right: 14px; }
+    .navbar .dropdown-toggle_english span {
+      background-image: url(../img/icon-lang-english.png);
+      background-position: 0 center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: block;
+      height: 32px;
+      padding: 0;
+      width: 32px; }
+    .navbar .dropdown-toggle_english:after {
+      margin-left: 4px;
+      position: absolute;
+      right: 0;
+      top: calc(50% - 2px); }
+
+.slider-header h1 {
+  color: #ffffff;
+  font-size: 3.1875rem;
+  line-height: 1;
+  max-width: 300px;
+  text-align: right; }
+.slider-header__item {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between; }
+.slider-header__slide-content > a {
+  color: #fde428;
+  font-size: 1.3125rem;
+  font-weight: 700; }
+.slider-header button {
+  background: none;
+  border: none;
+  color: #fde428;
+  font-family: "MyriadPro";
+  font-size: 0.75rem;
+  text-transform: uppercase; }
+
+.block_blue {
+  background-color: #002e5b; }
+  .block_blue p {
+    color: #ffffff; }
+  .block_blue .btn {
+    background-color: #fde428;
+    border: none;
+    color: #002e5b;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    height: 51px; }
+
+.row-description p {
+  color: #333333;
+  font-family: "SegoeUI";
+  line-height: 1.5625rem; }
+
+.block_bg {
+  background-image: url(../img/bg-funfacts.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .block_bg p {
+    color: #ffffff;
+    font-family: "SegoeUI";
+    font-size: 0.875rem;
+    line-height: 3rem;
+    text-transform: uppercase; }
+    .block_bg p span {
+      color: #ffffff;
+      display: block;
+      font-family: "Montserrat", sans-serif;
+      font-size: 3rem;
+      line-height: 1.25;
+      text-transform: uppercase; }
+
+.block-review {
+  background-image: url(../img/bg-review.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .block-review p {
+    color: #ffffff;
+    font-family: "MyriadPro";
+    font-size: 1.25rem;
+    line-height: 38px; }
+  .block-review .block-review__subscribe {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 4; }
 
 /*# sourceMappingURL=style.css.map */

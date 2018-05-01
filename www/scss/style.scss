@@ -46,7 +46,7 @@ button:hover {
 
 .container {
   width: 100%;
-  max-width: 1172px;
+  max-width: 1202px;
   a {
     color: #002e5b;
     font-weight: 700;
@@ -69,28 +69,49 @@ button:hover {
 }
 
 .navbar {
-  padding: 0;
+  padding-top: 45px;
   
-  .nav-link {
-    color: $white;
-    font-size: 14px;
-    letter-spacing: 0.3px;
-    text-transform: uppercase;    
+  .nav-item {
+    align-self: center;
+    &:last-child {
+      margin-left: 10px;
+    }
+    .nav-link {
+      color: $white;
+      font-size: 14px;
+      letter-spacing: 0.3px;
+      padding-left: 22px;
+      padding-right: 22px;
+      text-transform: uppercase;
+    }
   }
+
+
+  .dropdown { 
   .dropdown-toggle_english {
-    background-image: url(../img/icon-lang-english.png);
-    background-position: 0 center;
-    background-repeat: no-repeat;
-    background-size: contain;
     display: block;
-    height: 32px;
-    width: 46px;
+    padding-right: 12px;
+    padding-left: 0;
+    
+    span {
+      background-image: url(../img/icon-lang-english.png);
+      background-position: 0 center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: block;
+      height: 32px;
+      padding: 0;
+      width: 32px;
+    }
+    
     &:after {
+      margin-left: 4px;
       position: absolute;
       right: 0;
       top: calc(50% - 2px);
     }
-  }  
+    }
+  }
 }
 
 .slider-header{
