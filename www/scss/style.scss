@@ -1,0 +1,191 @@
+$blue: #002e5b;
+$yellow: #fde428;
+$yellow-bg: #fde52c;
+$gray-dark: #333333;
+$gray-light: #666666;
+$white: #ffffff;
+$font-primary: 'Montserrat', sans-serif;
+
+@font-face {
+  font-family: 'SegoeUI';
+  src: url(../fonts/SegoeUI.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'MyriadPro';
+  src: url(../fonts/MyriadPro.ttf);
+  font-weight: 400;
+}
+
+@import 'reset.scss';
+
+body {
+  color: $gray-dark;
+  font-family: $font-primary;
+  line-height: 1.25;
+}
+
+h2 {
+  color: $blue;
+  font-size: 1.9375rem;
+  line-height: 1;
+  margin-bottom: 25px;
+  text-transform: uppercase;  
+}
+
+h3 {
+  color: $blue;
+  font-size: 21px;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  max-width: 1172px;
+  a {
+    color: #002e5b;
+    font-weight: 700;
+    line-height: 25px;
+    text-transform: uppercase;
+  }
+  .col_gray_dark {	
+    color: $gray-dark;
+  }
+  .col_gray_light {
+    color: $gray-light;
+  }
+}
+
+.bg-main {
+  background-image: url(../img/bg-header-slider-01.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 890px;
+}
+
+.navbar {
+  padding: 0;
+  
+  .nav-link {
+    color: $white;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;    
+  }
+  .dropdown-toggle_english {
+    background-image: url(../img/icon-lang-english.png);
+    background-position: 0 center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    height: 32px;
+    width: 46px;
+    &:after {
+      position: absolute;
+      right: 0;
+      top: calc(50% - 2px);
+    }
+  }  
+}
+
+.slider-header{
+  
+  h1 {
+    color: $white;
+    font-size: 3.1875rem;
+    line-height: 1;
+    max-width: 300px;
+    text-align: right;    
+  }
+  
+  &__item {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  &__slide-content > a {
+    color: $yellow;
+    font-size: 1.3125rem;
+    font-weight: 700;
+  }
+  
+  button {
+    background: none;
+    border: none;
+    color: $yellow;
+    font-family: "MyriadPro";
+    font-size: 0.75rem;
+    text-transform: uppercase;
+  }
+}
+
+.block_blue {
+  background-color: $blue;
+  p{
+    color: $white;
+  }
+  .btn {
+    background-color: $yellow;
+    border: none;
+    color: $blue;
+    font-family: $font-primary;
+    font-weight: 700;
+    text-transform: uppercase;
+    height: 51px;
+  }
+}
+.row-description {
+  p {
+    color: $gray-dark;
+    font-family: "SegoeUI";
+    line-height: 1.5625rem;
+  }	
+}
+.block_bg {
+  background-image: url(../img/bg-funfacts.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  p {
+    color: $white;
+    font-family: "SegoeUI";
+    font-size: 0.875rem;
+    line-height: 3rem;
+    text-transform: uppercase;
+    span {
+      color: $white;
+      display: block;
+      font-family: $font-primary;
+      font-size: 3rem;
+      line-height: 1.25;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.block-review {
+  background-image: url(../img/bg-review.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  p{
+    color: $white;
+    font-family: "MyriadPro";
+    font-size: 1.25rem;
+    line-height: 38px;
+  }
+  .block-review__subscribe{
+    color: $white;
+    font-family: Montserrat;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 4;
+  }
+}
