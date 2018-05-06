@@ -71,9 +71,9 @@ button:hover {
     font-weight: 700;
     line-height: 25px;
     text-transform: uppercase; }
-  .container .text_gray_dark {
+  .container .text_gray-dark {
     color: #333333; }
-  .container .text_gray_light {
+  .container .text_gray-light {
     color: #666666;
     font-family: "Segoe UI Emoji";
     font-size: 21px;
@@ -147,7 +147,7 @@ button:hover {
     background-position: 0 0;
     background-repeat: no-repeat; }
   .slider-header__slide-content > a {
-    color: #fde428;
+    color: #fde42c;
     display: block;
     font-size: 1.3125rem;
     font-weight: 700;
@@ -155,7 +155,7 @@ button:hover {
 .slider-header button {
   background: none;
   border: none;
-  color: #fde428;
+  color: #fde42c;
   font-family: "MyriadPro";
   font-size: 0.75rem;
   text-transform: uppercase;
@@ -187,7 +187,7 @@ button:hover {
   margin-right: -3px;
   position: relative; }
 .slider-header__btn-prev:hover:after {
-  color: #fde428; }
+  color: #fde42c; }
 .slider-header__btn-prev:hover:before {
   background-image: url(../img/icon-arr-left_white.svg); }
 .slider-header__btn-next:after {
@@ -207,7 +207,7 @@ button:hover {
     letter-spacing: -0.2px;
     line-height: 41px; }
   .block-contactnow .btn {
-    background-color: #fde428;
+    background-color: #fde42c;
     border: none;
     color: #002e5b;
     font-family: "Montserrat", sans-serif;
@@ -256,6 +256,47 @@ button:hover {
       letter-spacing: 11px;
       text-transform: uppercase; }
 
+.col_bg-line {
+  position: relative; }
+  .col_bg-line > * {
+    position: relative;
+    z-index: 8; }
+  .col_bg-line:after {
+    content: '';
+    background-color: #fde42c;
+    width: 270px;
+    height: 540px;
+    top: -110px;
+    position: absolute;
+    left: 130px;
+    z-index: 0; }
+
+.block-whywe {
+  background-color: #ffffff;
+  overflow: hidden; }
+  .block-whywe .col {
+    padding: 0 10px; }
+  .block-whywe .container {
+    height: 525px;
+    padding-top: 95px; }
+  .block-whywe .col-text {
+    padding-left: 20px; }
+    .block-whywe .col-text h2 {
+      margin-bottom: 20px;
+      max-width: 500px; }
+    .block-whywe .col-text p {
+      color: #333333;
+      letter-spacing: -1px;
+      line-height: 25px;
+      max-width: 540px; }
+    .block-whywe .col-text .text_gray-light {
+      letter-spacing: 0px;
+      margin-bottom: 20px;
+      max-width: 500px; }
+    .block-whywe .col-text a {
+      display: block;
+      margin-top: 25px; }
+
 .block-review {
   background-image: url(../img/bg-review.png);
   background-repeat: no-repeat;
@@ -281,7 +322,7 @@ footer {
     color: #ffffff;
     vertical-align: middle; }
     footer .copyright a {
-      color: #fde428;
+      color: #fde42c;
       text-transform: none; }
 
 .social {
