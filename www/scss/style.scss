@@ -1,4 +1,4 @@
-$blue: #002e5b;
+$blue-dark: #002e5b;
 $yellow: #fde428;
 $yellow-bg: #fde52c;
 $gray-dark: #333333;
@@ -26,7 +26,7 @@ body {
 }
 
 h2 {
-  color: $blue;
+  color: $blue-dark;
   font-size: 1.9375rem;
   line-height: 1;
   margin-bottom: 25px;
@@ -34,7 +34,7 @@ h2 {
 }
 
 h3 {
-  color: $blue;
+  color: $blue-dark;
   font-size: 21px;
   line-height: 48px;
   text-transform: uppercase;
@@ -133,10 +133,32 @@ button:hover {
     justify-content: space-between;
   }
   
-  &__slide-content > a {
+  &__slide-content {
+    padding-right: 220px;
+    padding-top: 84px;
+    position: relative;
+    &:after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 300px;
+      height: 378px;
+      background-image: url(../img/border-cropped_yellow.svg);
+      background-image: url(../img/img-square_yellow.png);
+      background-position: 0 0;
+      background-repeat: no-repeat;      
+    }
+   & > a {
     color: $yellow;
+    display: block;
     font-size: 1.3125rem;
     font-weight: 700;
+    text-align: right;
+    }
+    
+    
   }
   
   button {
@@ -146,18 +168,71 @@ button:hover {
     font-family: "MyriadPro";
     font-size: 0.75rem;
     text-transform: uppercase;
+    transition: 0.3s;
+    vertical-align: top;
+    letter-spacing: 0.3px;
+    &:hover{
+      color: $white;
+    }
+  }
+  
+  &__buttons {
+    
+  }
+  &__btn-prev, &__btn-next {
+    vertical-align: top;
+  }
+  &__btn-prev:before, &__btn-next:after {
+    content: '';
+    background-image: url(../img/icon-arr-left_yellow.svg);
+    background-position: 0 center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    height: 17px;
+    position: relative;
+    transition: 0.3s;
+    vertical-align: top;
+    width: 21px;
+  }
+  &__btn-prev {
+    &:before {    
+      margin-right: 24px;    
+    }
+    &:after {
+      content: '/';
+      display: inline-block;
+      margin-left: 10px;
+      margin-right: -3px;
+      position: relative;
+    }
+    &:hover:after{
+      color: $yellow;
+    }  
+    &:hover:before {
+      background-image: url(../img/icon-arr-left_white.svg);
+    }
+  }
+  &__btn-next {
+    &:after {
+      margin-left: 20px;
+      transform: rotate(180deg);
+    }
+    &:hover:after {
+      background-image: url(../img/icon-arr-left_white.svg);
+    }
   }
 }
 
 .block_blue {
-  background-color: $blue;
+  background-color: $blue-dark;
   p{
     color: $white;
   }
   .btn {
     background-color: $yellow;
     border: none;
-    color: $blue;
+    color: $blue-dark;
     font-family: $font-primary;
     font-weight: 700;
     text-transform: uppercase;
@@ -208,5 +283,69 @@ button:hover {
     font-size: 0.875rem;
     font-weight: 700;
     line-height: 4;
+  }
+}
+
+footer {
+  height: 80px;
+  padding-top: 25px;
+  .copyright {
+    align-self: center;
+    color: $white;
+    vertical-align: middle;
+    a {
+      color: $yellow;
+      text-transform: none;
+    }
+  }
+  background-color: $blue-dark;
+}
+
+.social {
+  margin-right: 6px;
+  margin-top: 5px;
+  text-align: right;
+  li {
+    display: inline-block;
+    + li {
+      margin-left: 14px;
+    }
+  }
+  
+  &__link {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    height: 16px;
+    &_facebook {
+      background-image: url(../img/icon-facebook_white.svg);
+      width: 12px;
+      &:hover {
+        background-image: url(../img/icon-facebook_yellow.svg);
+      }
+    }    
+    &_gplus {
+      background-image: url(../img/icon-gplus_white.svg);
+      width: 22px;
+      &:hover {
+        background-image: url(../img/icon-gplus_yellow.svg);        
+      }
+    }
+    &_instagram {
+      background-image: url(../img/icon-instagram_white.svg);
+      width: 16px;
+      &:hover {
+        background-image: url(../img/icon-instagram_yellow.svg);
+      }
+    }
+    &_twitter {
+      background-image: url(../img/icon-twitter_white.svg);
+      width: 16px;
+      &:hover {
+        background-image: url(../img/icon-twitter_yellow.svg);
+      }
+    }
+    
   }
 }
