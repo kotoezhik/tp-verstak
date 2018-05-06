@@ -246,14 +246,17 @@ button:hover {
     line-height: 1.5625rem;
   }	
 }
-.block_bg {
+.block-funfacts {
   background-image: url(../img/bg-funfacts.png);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 360px;
+  padding-top: 128px;
   p {
     color: $white;
     font-family: "SegoeUI";
     font-size: 0.875rem;
+    letter-spacing: 3px;
     line-height: 3rem;
     text-transform: uppercase;
     span {
@@ -262,6 +265,7 @@ button:hover {
       font-family: $font-primary;
       font-size: 3rem;
       line-height: 1.25;
+      letter-spacing: 11px;
       text-transform: uppercase;
     }
   }
