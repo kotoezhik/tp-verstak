@@ -224,10 +224,16 @@ button:hover {
   }
 }
 
-.block_blue {
+.block-contactnow {
   background-color: $blue-dark;
+  height: 90px;
+  padding-top: 23px;
   p{
     color: $white;
+    font-family: Montserrat;
+    font-size: 21px;
+    letter-spacing: -0.2px;
+    line-height: 41px;
   }
   .btn {
     background-color: $yellow;
@@ -235,8 +241,9 @@ button:hover {
     color: $blue-dark;
     font-family: $font-primary;
     font-weight: 700;
+    height: 44px;
+    padding: 0 18px;
     text-transform: uppercase;
-    height: 51px;
   }
 }
 .row-description {
