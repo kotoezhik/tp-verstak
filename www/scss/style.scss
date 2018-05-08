@@ -53,11 +53,11 @@ button:hover {
     text-transform: uppercase;
   }
   .text_gray-dark {	
-    color: $gray-dark;
+    /*color: $gray-dark;*/
   }
   .text_gray-light {
     color: $gray-light;    
-    font-family: "Segoe UI Emoji";
+    font-family: "SegoeUI";
     font-size: 21px;
     line-height: 25px;
   }
@@ -249,6 +249,26 @@ button:hover {
   }
 }
 
+.block-risk-reduce {
+  overflow: hidden;
+  padding: 95px 0;
+  img {
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);  
+  }
+  .col_bg-line {
+	  text-align: right;
+    &:after {
+      left: 200px;
+    }
+  }
+  
+}
+
+.block-graph {
+  background-color: #f4f4f4;
+  padding: 95px 0;
+}
+
 .block-popular-services {
   padding-bottom: 95px;
 	padding-top: 95px;
@@ -307,7 +327,7 @@ button:hover {
     content: '';
     background-color: $yellow;
     width: 270px;
-    height: 540px;
+    height: 580px;
     top: -110px;
     position: absolute;
     left: 130px;
@@ -320,31 +340,41 @@ button:hover {
   overflow: hidden;
   .col {
     padding: 0 10px;
+    &-text {
+      padding-left: 20px;
+    }
   }
   .container {
     height: 525px;
     padding-top: 95px;    
   }
-  .col-text {
-    padding-left: 20px;
-    h2 {
-      margin-bottom: 20px;
-      max-width: 500px;
-    }
-    p {
-      color: $gray-dark;
-      letter-spacing: -1px;
-      line-height: 25px;
-      max-width: 540px;
-    }
-    .text_gray-light {
-      letter-spacing: 0px;
-      margin-bottom: 20px;
-      max-width: 500px;
-    }
-    a {
-      display: block;
-      margin-top: 25px;
+}
+
+.col-text {
+//  padding-left: 20px;
+  h2 {
+    margin-bottom: 20px;
+    max-width: 500px;
+  }
+  p {
+    color: $gray-dark;
+    font-family: 'SegoeUI';
+//    letter-spacing: -1px;
+    line-height: 25px;
+    max-width: 540px;
+  }
+  .text_gray-light {
+//    letter-spacing: 0px;
+    margin-bottom: 18px;
+    max-width: 500px;
+  }
+  a {
+    border-bottom: 2px solid $blue-dark;
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    &:hover {
+      border-bottom: 2px solid transparent;
     }
   }
 }
