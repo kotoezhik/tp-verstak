@@ -50,7 +50,7 @@ button:hover {
     color: #002e5b;
     font-weight: 700;
     line-height: 25px;
-    text-transform: uppercase;
+//    text-transform: uppercase;
   }
   .text_gray-dark {	
     /*color: $gray-dark;*/
@@ -247,6 +247,65 @@ button:hover {
     padding: 0 18px;
     text-transform: uppercase;
   }
+}
+
+.block-contact-maps {
+  padding-bottom: 95px;
+  padding-top: 95px;
+  &__office {
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.07);
+    width: 370px;
+  }
+  h2 {
+    margin-bottom: 18px;
+    + p {
+      color: $gray-light;
+      max-width: 570px;
+      margin: 0 auto;
+      margin-bottom: 40px;    
+      font-family: "SegoeUI";
+      font-size: 21px;
+    }
+  }
+  h3 {
+    letter-spacing: -2.5px;
+    line-height: 1;
+    margin-bottom: 25px;
+  }
+  li {padding-left: 38px;position: relative;}
+  li, li a {
+    color: $blue-dark;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 15px;    
+  }
+  li:before {
+    content: '';
+    display: inline-block;
+    height: 13px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 13px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .minimap {
+    height: 240px;
+  }
+  &__office-contacts {
+    min-height: 220px;
+    padding-bottom: 25px;
+    padding-left: 35px;
+    padding-top: 40px;
+  }
+  .row {
+    padding: 0 15px;
+  }
+  &__address:before{background-image: url(../img/icon-map-pointer.svg);}
+  &__email:before{background-image: url(../img/icon-email.svg);}
+  &__phone:before{background-image: url(../img/icon-mobile-phone.svg);}
 }
 
 .block-risk-reduce {
