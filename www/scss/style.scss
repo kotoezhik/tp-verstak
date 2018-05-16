@@ -122,10 +122,11 @@ button:hover {
     color: $white;
     font-size: 3.1875rem;
     line-height: 1;
+    margin-bottom: 38px;
     max-width: 300px;
     text-align: right;    
   }
-  
+  &__buttons {margin-top: 378px;}  
   &__item {
     display: -webkit-flex;
     display: -moz-flex;
@@ -136,8 +137,9 @@ button:hover {
   }
   
   &__slide-content {
+    margin-top: 200px;
     padding-right: 220px;
-    padding-top: 84px;
+    padding-top: 75px;
     position: relative;
     &:after {
       content: '';
@@ -150,19 +152,24 @@ button:hover {
       background-image: url(../img/border-cropped_yellow.svg);
       background-image: url(../img/img-square_yellow.png);
       background-position: 0 0;
-      background-repeat: no-repeat;      
+      background-repeat: no-repeat;  
     }
-   & > a {
-    color: $yellow;
-    display: block;
-    font-size: 1.3125rem;
-    font-weight: 700;
-    text-align: right;
+    & > a {
+      border-bottom: 2px solid $yellow;
+      color: $yellow;
+      display: inline-block;
+      position: absolute;
+      font-size: 1.3125rem;
+      font-weight: 700;
+      right: 225px;
+      text-align: right;
+      z-index: 998;
+      &:hover {
+        border-bottom: 2px solid transparent;
+        text-decoration: none;
+      }
     }
-    
-    
-  }
-  
+  }  
   button {
     background: none;
     border: none;
@@ -178,12 +185,8 @@ button:hover {
     }
   }
   
-  &__buttons {
-    
-  }
-  &__btn-prev, &__btn-next {
-    vertical-align: top;
-  }
+  &__btn-prev {padding-left: 0;}
+  &__btn-prev, &__btn-next {vertical-align: top;}
   &__btn-prev:before, &__btn-next:after {
     content: '';
     background-image: url(../img/icon-arr-left_yellow.svg);
@@ -208,21 +211,15 @@ button:hover {
       margin-right: -3px;
       position: relative;
     }
-    &:hover:after{
-      color: $yellow;
-    }  
-    &:hover:before {
-      background-image: url(../img/icon-arr-left_white.svg);
-    }
+    &:hover:after{color: $yellow;}  
+    &:hover:before {background-image: url(../img/icon-arr-left_white.svg);}
   }
   &__btn-next {
     &:after {
       margin-left: 20px;
       transform: rotate(180deg);
     }
-    &:hover:after {
-      background-image: url(../img/icon-arr-left_white.svg);
-    }
+    &:hover:after {background-image: url(../img/icon-arr-left_white.svg);}
   }
 }
 
@@ -438,22 +435,54 @@ button:hover {
   }
 }
 
-.block-review {
+.block-reviews {
   background-image: url(../img/bg-review.png);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 540px;
+  padding-top: 120px;
+  &:before {
+    content: '';
+    background-image: url(../img/icon-quotes.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 25px;
+    margin-bottom: 30px;
+    width: 25px;
+  }
   p{
     color: $white;
     font-family: "MyriadPro";
     font-size: 1.25rem;
     line-height: 38px;
+    margin: 0 auto;
+    max-width: 970px;
   }
-  .block-review__subscribe{
+  .block-reviews__subscribe{
     color: $white;
     font-family: Montserrat;
     font-size: 0.875rem;
     font-weight: 700;
-    line-height: 4;
+    margin-top: 65px;
+    text-align: center;
+    p{
+      display: inline-block;
+      font-family: Montserrat;
+      font-size: 14px;
+      line-height: 1;      
+      position: relative;
+      &:before, &:after {
+        content: '';
+        background-color: #fff;
+        height: 2px;
+        left: -30px;
+        position: absolute;
+        top: calc(50% - 1px);
+        width: 20px;          
+      }
+      &:after{left: initial; right: -30px;}
+    }
   }
 }
 

@@ -120,8 +120,11 @@ button:hover {
   color: #ffffff;
   font-size: 3.1875rem;
   line-height: 1;
+  margin-bottom: 38px;
   max-width: 300px;
   text-align: right; }
+.slider-header__buttons {
+  margin-top: 378px; }
 .slider-header__item {
   display: -webkit-flex;
   display: -moz-flex;
@@ -130,8 +133,9 @@ button:hover {
   display: flex;
   justify-content: space-between; }
 .slider-header__slide-content {
+  margin-top: 200px;
   padding-right: 220px;
-  padding-top: 84px;
+  padding-top: 75px;
   position: relative; }
   .slider-header__slide-content:after {
     content: '';
@@ -146,11 +150,18 @@ button:hover {
     background-position: 0 0;
     background-repeat: no-repeat; }
   .slider-header__slide-content > a {
+    border-bottom: 2px solid #fde42c;
     color: #fde42c;
-    display: block;
+    display: inline-block;
+    position: absolute;
     font-size: 1.3125rem;
     font-weight: 700;
-    text-align: right; }
+    right: 225px;
+    text-align: right;
+    z-index: 998; }
+    .slider-header__slide-content > a:hover {
+      border-bottom: 2px solid transparent;
+      text-decoration: none; }
 .slider-header button {
   background: none;
   border: none;
@@ -163,6 +174,8 @@ button:hover {
   letter-spacing: 0.3px; }
   .slider-header button:hover {
     color: #ffffff; }
+.slider-header__btn-prev {
+  padding-left: 0; }
 .slider-header__btn-prev, .slider-header__btn-next {
   vertical-align: top; }
 .slider-header__btn-prev:before, .slider-header__btn-next:after {
@@ -368,21 +381,52 @@ button:hover {
   .col-text a:hover {
     border-bottom: 2px solid transparent; }
 
-.block-review {
+.block-reviews {
   background-image: url(../img/bg-review.png);
   background-repeat: no-repeat;
-  background-size: cover; }
-  .block-review p {
+  background-size: cover;
+  height: 540px;
+  padding-top: 120px; }
+  .block-reviews:before {
+    content: '';
+    background-image: url(../img/icon-quotes.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 25px;
+    margin-bottom: 30px;
+    width: 25px; }
+  .block-reviews p {
     color: #ffffff;
     font-family: "MyriadPro";
     font-size: 1.25rem;
-    line-height: 38px; }
-  .block-review .block-review__subscribe {
+    line-height: 38px;
+    margin: 0 auto;
+    max-width: 970px; }
+  .block-reviews .block-reviews__subscribe {
     color: #ffffff;
     font-family: Montserrat;
     font-size: 0.875rem;
     font-weight: 700;
-    line-height: 4; }
+    margin-top: 65px;
+    text-align: center; }
+    .block-reviews .block-reviews__subscribe p {
+      display: inline-block;
+      font-family: Montserrat;
+      font-size: 14px;
+      line-height: 1;
+      position: relative; }
+      .block-reviews .block-reviews__subscribe p:before, .block-reviews .block-reviews__subscribe p:after {
+        content: '';
+        background-color: #fff;
+        height: 2px;
+        left: -30px;
+        position: absolute;
+        top: calc(50% - 1px);
+        width: 20px; }
+      .block-reviews .block-reviews__subscribe p:after {
+        left: initial;
+        right: -30px; }
 
 footer {
   height: 80px;
